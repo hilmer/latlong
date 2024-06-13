@@ -3,12 +3,12 @@ defmodule Latlong.Mixfile do
 
   def project do
     [app: :latlong,
-     version: "0.1.0",
+     version: "0.1.1",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      description: "Latitude, Longitude Parser",
-     package: package,
+     package: package(),
      deps: deps(),
 
      # Docs
@@ -46,6 +46,6 @@ end
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:ex_doc, "~> 0.14", only: :dev}]
+    [{:ex_doc, "~> 0.34", only: :dev}]
   end
 end
